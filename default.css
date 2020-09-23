@@ -1,0 +1,140 @@
+:root {
+  --mainColor: #c9c7c7;
+  --secondaryColor: #fff;
+  --mainText: black;
+  --borederColor: #c1c1c1;
+  --secondaryText: #4b5156;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--secondaryText);
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Kufam", cursive;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: 17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borederColor);
+  overflow: auto;
+}
+.s2 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borederColor);
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+.naslov {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  min-height: 10em;
+}
+
+.intro-wrap {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borederColor);
+  border-radius: 5px 5px 0 0;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3em 30em;
+  grid-template-areas:
+    "nav-wrap nav-wrap"
+    "left-nav-wrap right-nav-wrap";
+}
+
+.nav-wrap {
+  grid-area: nav-wrap;
+  border-bottom: 1px solid var(--borederColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-nav-wrap {
+  grid-area: left-nav-wrap;
+}
+.right-nav-wrap {
+  grid-area: right-nav-wrap;
+}
+
+.dots {
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+.dots-wrap {
+  display: flex;
+}
+
+.brows-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
