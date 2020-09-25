@@ -36,7 +36,10 @@ strong {
 
 a {
   text-decoration: none;
-  color: 17a2b8;
+  color: #17a2b8;
+}
+a:hover {
+  color: #127281;
 }
 
 ul {
@@ -202,6 +205,9 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
+#about-me {
+  margin-right: 20px;
+}
 
 #skills {
   padding-top: 10px;
@@ -214,6 +220,8 @@ h6 {
   color: black;
   font-size: 20px;
   margin: 0;
+}
+#myWork {
 }
 
 @media screen and (max-width: 1200px) {
