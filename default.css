@@ -194,23 +194,15 @@ h6 {
   border: 2px solid var(--borederColor);
   /* border-radius: 10px; */
 }
-#profile-pic-wrap {
-  position: relative;
-  width: 227px; /* +2 cuz border */
-  height: 302px; /* +2 cuz border */
-  margin: 0 auto;
-}
 
 .about-wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-}
-#about-me {
-  margin-right: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 100px;
 }
 
 #skills {
-  padding-top: 10px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(255, 222, 198);
@@ -222,6 +214,71 @@ h6 {
   margin: 0;
 }
 #myWork {
+  display: grid;
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.post-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.thumnail {
+  width: 100%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+}
+.post {
+  border: 1px solid var(--borederColor);
+  border-radius: 5px;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+}
+.post-preview {
+  background-color: white;
+  padding: 15px;
+}
+.post-title {
+  margin: 0;
+}
+.post-intro {
+  font-size: 14px;
+}
+.post-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: stretch;
+  margin-bottom: 15px;
+}
+#GIT {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(180, 180, 180);
+  background-color: #24292e;
+  border-radius: 5px;
+}
+#GIT:hover {
+  color: green;
+}
+#live {
+  padding: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: var(--secondaryText);
+  background-color: #fff;
+  border: 2px solid rgb(73, 73, 73);
+  border-radius: 5px;
+}
+#live:hover {
+  color: black;
 }
 
 @media screen and (max-width: 1200px) {
