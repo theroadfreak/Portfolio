@@ -81,11 +81,33 @@ h6 {
   margin: 0 auto;
 }
 
-.naslov {
+/* .naslov {
   display: grid;
   place-content: center;
   align-content: center;
   min-height: 10em;
+} */
+
+.naslov {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1.4fr 3fr 4.5fr;
+  grid-template-areas: "naslov1 naslov2 naslov3";
+  gap: 30px;
+}
+
+#naslov1 {
+  grid-area: naslov1;
+}
+#naslov2 {
+  grid-area: naslov2;
+}
+#naslov3 {
+  grid-area: naslov3;
+}
+svg {
+  width: 100%;
+  height: auto;
 }
 
 .intro-wrap {
@@ -216,7 +238,6 @@ h6 {
 }
 #myWork {
   display: grid;
-  /* align-content: center; */
   justify-content: center;
 }
 
@@ -228,12 +249,6 @@ h6 {
   padding-bottom: 50px;
 }
 
-/* .thumnail {
-  width: 100%;
-  height: 180px;
-  display: block;
-  object-fit: cover;
-} */
 .thumnail {
   width: 94%;
   height: 180px;
@@ -258,7 +273,6 @@ h6 {
   background-color: #9cd4dd;
 }
 .post-preview {
-  /* background-color: inherit; */
   padding: 15px;
 }
 .post-title {
@@ -290,22 +304,22 @@ h6 {
   color: green;
 }
 #live {
-  padding: 3px;
+  padding: 4px;
   padding-left: 25px;
   padding-right: 25px;
   color: var(--secondaryText);
   background-color: #fff;
-  border: 2px solid rgb(73, 73, 73);
+  border: 1px solid rgb(73, 73, 73);
   border-radius: 5px;
 
-  transition-property: background-color, color;
+  transition-property: background-color, border-color, color;
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
 #live:hover {
   color: black;
-  /* background-color: rgb(255, 222, 198); */
-  background-color: rgb(190, 190, 190);
+  border-color: black;
+  background-color: rgb(255, 222, 198);
 }
 
 .intro-wrap-apps {
@@ -411,5 +425,22 @@ h6 {
       "TekstLevo "
       "naslovDesno"
       "TekstDesno";
+  }
+
+  /* so ovoa overwrite na svg{width:100%} pravam */
+  #Im {
+    width: auto;
+  }
+  #dushan {
+    width: auto;
+  }
+
+  .naslov {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "naslov1"
+      "naslov2"
+      "naslov3";
   }
 }
