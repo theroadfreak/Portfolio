@@ -4,6 +4,7 @@
   --mainText: black;
   --borederColor: #aca9a9;
   --secondaryText: #4b5156;
+  --btnColor: black;
 }
 
 html,
@@ -394,6 +395,61 @@ svg {
   height: auto;
 }
 
+#contact-wrap:hover {
+  background-color: #9cd4dd;
+}
+#contact-naslov {
+  text-align: center;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+#contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 10px;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.contact-elems {
+  width: 220px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid var(--borederColor);
+  border-radius: 20px;
+  background-color: white;
+
+  transition-property: background-color border-color border-radius;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+.contact-elems-al {
+  display: grid;
+  justify-items: center;
+}
+#email:hover {
+  border-color: black;
+  background-color: rgb(255, 222, 198);
+  border-radius: 50px;
+}
+
+#insta:hover {
+  border-color: #405de6;
+  background-color: #ff5990;
+  border-radius: 50px;
+}
+
+#facebook:hover {
+  border-color: #002aff;
+  background-color: #6a85fd;
+  border-radius: 50px;
+}
+#github:hover {
+  border-color: #000000;
+  background-color: #58ff8a;
+  border-radius: 50px;
+}
+
 @media screen and (max-width: 1200px) {
   .main-container {
     width: 95%;
@@ -413,6 +469,9 @@ svg {
       "nav-wrap "
       "left-nav-wrap "
       "right-nav-wrap";
+  }
+  .about-wrap {
+    gap: 20px;
   }
   .right-nav-wrap {
     justify-content: center;
