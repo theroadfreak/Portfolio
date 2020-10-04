@@ -82,13 +82,6 @@ h6 {
   margin: 0 auto;
 }
 
-/* .naslov {
-  display: grid;
-  place-content: center;
-  align-content: center;
-  min-height: 10em;
-} */
-
 .naslov {
   padding: 10px;
   display: grid;
@@ -123,7 +116,7 @@ svg {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 3em 30em; */
+
   grid-template-areas:
     "nav-wrap nav-wrap"
     "left-nav-wrap right-nav-wrap";
@@ -213,9 +206,15 @@ svg {
   height: 300px;
   object-fit: cover;
   margin: 0 auto;
-  /* border: 2px solid var(--borederColor); */
+
   border: 2px solid var(--borederColor);
-  /* border-radius: 10px; */
+}
+
+#about-cont-wrap {
+  transition: background-color 500ms linear;
+}
+#about-cont-wrap:hover {
+  background-color: #9cd4dd;
 }
 
 .about-wrap {
@@ -236,10 +235,6 @@ svg {
   color: black;
   font-size: 20px;
   margin: 10px;
-}
-#myWork {
-  display: grid;
-  justify-content: center;
 }
 
 .post-wrap {
@@ -395,6 +390,9 @@ svg {
   height: auto;
 }
 
+#contact-wrap {
+  transition: background-color 500ms linear;
+}
 #contact-wrap:hover {
   background-color: #9cd4dd;
 }
