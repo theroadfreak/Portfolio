@@ -1,0 +1,503 @@
+:root {
+  --mainColor: #c9c7c7;
+  --secondaryColor: #fff;
+  --mainText: black;
+  --borederColor: #aca9a9;
+  --secondaryText: #4b5156;
+  --btnColor: black;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--secondaryText);
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Russo One", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+a:hover {
+  color: #127281;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borederColor);
+  overflow: auto;
+}
+.s2 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borederColor);
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.naslov {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1.4fr 3fr 4.5fr;
+  grid-template-areas: "naslov1 naslov2 naslov3";
+  gap: 30px;
+}
+
+#naslov1 {
+  grid-area: naslov1;
+}
+#naslov2 {
+  grid-area: naslov2;
+}
+#naslov3 {
+  grid-area: naslov3;
+}
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.intro-wrap {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borederColor);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas:
+    "nav-wrap nav-wrap"
+    "left-nav-wrap right-nav-wrap";
+}
+
+.nav-wrap {
+  grid-area: nav-wrap;
+  border-bottom: 1px solid var(--borederColor);
+  border-radius: 10px 10px 0 0;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2e2e2;
+}
+.left-nav-wrap {
+  margin-top: 50px;
+  grid-area: left-nav-wrap;
+}
+.right-nav-wrap {
+  grid-area: right-nav-wrap;
+  display: grid;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#preview {
+  width: 300px;
+  border: 2px solid #17a2b8;
+  background-color: #9cd4dd;
+  padding: 15px;
+  position: relative;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+}
+
+.corner {
+  width: 7px;
+  height: 7px;
+  border: 2px solid #17a2b8;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+
+#c-tr {
+  top: -5px;
+  left: -5px;
+}
+#c-tl {
+  top: -5px;
+  right: -5px;
+}
+#c-br {
+  bottom: -5px;
+  left: -5px;
+}
+#c-bl {
+  bottom: -5px;
+  right: -5px;
+}
+
+.dots {
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+}
+.dots-wrap {
+  display: flex;
+}
+
+.brows-dot {
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#profile-pic {
+  display: block;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+
+  border: 2px solid var(--borederColor);
+}
+
+#about-cont-wrap {
+  transition: background-color 500ms linear;
+}
+#about-cont-wrap:hover {
+  background-color: #9cd4dd;
+}
+
+.about-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 100px;
+}
+
+#skills {
+  padding-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 222, 198);
+  border-radius: 10px;
+}
+#mali-naslovi {
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.post-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.thumnail {
+  width: 94%;
+  height: 180px;
+  display: block;
+  object-fit: cover;
+  padding: 10px;
+}
+.post {
+  border: 1px solid var(--borederColor);
+  border-radius: 5px;
+  background-color: #fff;
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+}
+.post:hover {
+  background-color: #9cd4dd;
+}
+.post-preview {
+  padding: 15px;
+}
+.post-title {
+  margin: 0;
+}
+.post-intro {
+  font-size: 14px;
+  color: #1f1f1f;
+}
+.post-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: stretch;
+  margin-bottom: 15px;
+}
+#GIT {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(180, 180, 180);
+  background-color: #24292e;
+  border-radius: 5px;
+
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+#GIT:hover {
+  color: green;
+}
+#live {
+  padding: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: var(--secondaryText);
+  background-color: #fff;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 5px;
+
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+#live:hover {
+  color: black;
+  border-color: black;
+  background-color: rgb(255, 222, 198);
+}
+
+.intro-wrap-apps {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--borederColor);
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+
+  -webkit-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  -moz-box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+  box-shadow: 17px 18px 19px 2px rgba(105, 105, 105, 0.81);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav-wrap "
+    "main-img ";
+}
+
+#back-button {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  font-size: 17px;
+  color: var(--secondaryText);
+  background-color: #fff;
+  border: 2px solid rgb(73, 73, 73);
+  border-radius: 5px;
+}
+#back-button:hover {
+  color: black;
+}
+
+.main-img {
+  grid-area: main-img;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main-pic-frame {
+  border: 1px solid var(--borederColor);
+  border-radius: 5px;
+}
+#description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "naslovLevo naslovDesno"
+    "TekstLevo TekstDesno";
+}
+#naslovDesno {
+  grid-area: naslovDesno;
+  text-align: center;
+}
+#naslovLevo {
+  grid-area: naslovLevo;
+  text-align: center;
+}
+#TekstLevo {
+  grid-area: TekstLevo;
+  margin: 15px;
+}
+#TekstDesno {
+  grid-area: TekstDesno;
+  margin: 15px;
+}
+#main-pic-frame-scrape {
+  width: 500;
+  height: auto;
+}
+
+#contact-wrap {
+  transition: background-color 500ms linear;
+}
+#contact-wrap:hover {
+  background-color: #9cd4dd;
+}
+#contact-naslov {
+  text-align: center;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+#contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 220px);
+  gap: 10px;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.contact-elems {
+  width: 220px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid var(--borederColor);
+  border-radius: 20px;
+  background-color: white;
+
+  transition-property: background-color border-color border-radius;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+.contact-elems-al {
+  display: grid;
+  justify-items: center;
+}
+#email:hover {
+  border-color: black;
+  background-color: rgb(255, 222, 198);
+  border-radius: 50px;
+}
+
+#insta:hover {
+  border-color: #405de6;
+  background-color: #ff5990;
+  border-radius: 50px;
+}
+
+#facebook:hover {
+  border-color: #002aff;
+  background-color: #6a85fd;
+  border-radius: 50px;
+}
+#github:hover {
+  border-color: #000000;
+  background-color: #58ff8a;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main-pic-frame {
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrap "
+      "left-nav-wrap "
+      "right-nav-wrap";
+  }
+  .about-wrap {
+    gap: 20px;
+  }
+  .right-nav-wrap {
+    justify-content: center;
+  }
+  #description {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "naslovLevo "
+      "TekstLevo "
+      "naslovDesno"
+      "TekstDesno";
+  }
+
+  /* so ovoa overwrite na svg{width:100%} pravam */
+  #Im {
+    width: auto;
+  }
+  #dushan {
+    width: auto;
+  }
+
+  .naslov {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "naslov1"
+      "naslov2"
+      "naslov3";
+  }
+}
