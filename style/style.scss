@@ -403,11 +403,16 @@ svg {
   padding-bottom: 28px;
 }
 #contacts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 220px);
-  gap: 10px;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
   justify-content: space-evenly;
+}
+#contacts-row-two {
+  display: flex;
+  gap: 10px;
   padding-bottom: 50px;
+  justify-content: space-evenly;
 }
 .contact-elems {
   width: 220px;
@@ -425,26 +430,44 @@ svg {
   display: grid;
   justify-items: center;
 }
+#email {
+  grid-area: email;
+}
 #email:hover {
   border-color: black;
   background-color: rgb(255, 222, 198);
   border-radius: 50px;
 }
-
+#insta {
+  grid-area: insta;
+}
 #insta:hover {
   border-color: #405de6;
   background-color: #ff5990;
   border-radius: 50px;
 }
-
+#facebook {
+  grid-area: facebook;
+}
 #facebook:hover {
   border-color: #002aff;
   background-color: #6a85fd;
   border-radius: 50px;
 }
+#github {
+  grid-area: github;
+}
 #github:hover {
   border-color: #000000;
   background-color: #58ff8a;
+  border-radius: 50px;
+}
+#linkedin {
+  grid-area: linkedind;
+}
+#linkedin:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(124, 174, 250);
   border-radius: 50px;
 }
 
@@ -453,12 +476,17 @@ svg {
     width: 95%;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 860px) {
   .main-pic-frame {
-    width: 300px;
+    width: 90%;
+    height: auto;
+  }
+  #main-pic-frame-scrape {
+    width: 90%;
     height: auto;
   }
 }
+
 @media screen and (max-width: 800px) {
   .intro-wrap {
     display: grid;
@@ -483,7 +511,14 @@ svg {
       "naslovDesno"
       "TekstDesno";
   }
-
+  #contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contacts-row-two {
+    flex-direction: column;
+    align-items: center;
+  }
   /* so ovoa overwrite na svg{width:100%} pravam */
   #Im {
     width: auto;
