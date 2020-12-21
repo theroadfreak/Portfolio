@@ -1,2 +1,3 @@
 # Portfolio web page
-A short website i made to show what i have learned so far.
+A short web page i made to show what i have learned so far.
+https://www.dushanc.me/
