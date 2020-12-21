@@ -13,12 +13,12 @@
     />
     <link rel="icon" href="imgs/favicon.ico" />
 
-    <title>Discord Music BOT</title>
+    <title>Dushans WebScraper</title>
   </head>
   <body>
     <div class="main-container">
       <div style="text-align: center">
-        <h1>Discord Music BOT</h1>
+        <h1>Dushans WebScraper</h1>
       </div>
       <div class="intro-wrap-apps">
         <div class="nav-wrap">
@@ -35,9 +35,9 @@
 
         <div class="main-img">
           <img
-            class="main-pic-frame"
-            src="imgs/Apps/DMB.png"
-            alt="sudoku solver Pic"
+            id="main-pic-frame-scrape"
+            src="imgs/Apps/DemoScrape.png"
+            alt="WebScraper Pic"
           />
         </div>
         <div id="description">
@@ -49,42 +49,28 @@
           </div>
           <div id="TekstLevo">
             <p>
-              It will type "!play " and then the every song name that you
-              entered in the list. It can listen to your input (you don't have
-              to copy/paste).You can save and load your lists.
+              It's a WebScraper, it searches a local store website for soundbars
+              and returns their names , price and picture in an html document,
+              wich the script opens at the end. It basically displays the info
+              in your web-browser.
             </p>
             <p>
-              It was made in Python using "kivy" and frozen to exe with
-              Pyinstaller later all the needed files where compressed in a
-              installer which you can get
+              I used "Beautifle soup" and "Selenium" together with "Headless
+              Firefox", i'm not offering a download as .exe on this code becouse
+              of issues with "Windows Defender" but you can revew the code on
+              gitHub
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1xGINpkbP2u-keZVVtg5_cJVyuth8vAfK/view?usp=sharing"
-                >here</a
+                href="https://github.com/theroadfreak/Better-Scraping"
+                >here.</a
               >
-              , or you can view the project on gitHub
-              <a
-                target="_blank"
-                href="https://github.com/theroadfreak/DiscordMusicBot/settings"
-                >here
-              </a>
             </p>
           </div>
           <div id="TekstDesno">
             <p>
-              <b>Add</b> button will add the text you entered above to the list.
+              <b>It returns:</b> all the soundbars that where found together
+              with their names prices and pictures.
             </p>
-            <p>
-              <b>Start Typing</b> will start to type "!play", the song name,
-              then press enter for each individual song on the list.
-            </p>
-            <p><b>Save List</b> saves the current list.</p>
-            <p><b>Load From Saved</b> self explanatory.</p>
-            <p>
-              <b>Start Listening</b> will wait for you to copy some text and
-              press "Home" button, it will insert the copied text in the list.
-            </p>
-            <p><b>Remove Last Item</b> will remove the last added item.</p>
           </div>
         </div>
       </div>
