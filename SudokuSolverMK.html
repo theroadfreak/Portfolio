@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Kufam&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/favicon.ico" />
+
+    <title>Dushans Sudoku Solver</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div style="text-align: center">
+        <h1>Судоку решавач</h1>
+      </div>
+      <div class="intro-wrap-apps">
+        <div class="nav-wrap">
+          <div><a id="back-button" href="indexMK.html">Назад</a></div>
+
+          <div class="dots-wrap">
+            <img src="imgs/icons/min.ico" alt="min icon" class="dots" />
+            <img src="imgs/icons/maxMin.ico" alt="minmax icon" class="dots" />
+            <a href="index.html"
+              ><img src="imgs/icons/x.ico" alt="x icon" class="dots"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-img">
+          <img
+            class="main-pic-frame"
+            src="imgs/Apps/Sudoku.png"
+            alt="sudoku solver Pic"
+          />
+        </div>
+        <div id="description">
+          <div id="naslovLevo">
+            <h3>Што е</h3>
+          </div>
+          <div id="naslovDesno">
+            <h3>Карактеристики</h3>
+          </div>
+          <div id="TekstLevo">
+            <p style="font-family: optional">
+              Судоку решавач направен во python, работи со алгоритам базиран на
+              рекурзија и Tkinter библиотека за неговото GUI.
+            </p>
+            <p style="font-family: optional">
+              Со pyinstaller е доведено до .exe формат. Погледнете го кодот на
+              gitHub
+              <a
+                target="_blank"
+                href="https://github.com/theroadfreak/SudokuSolver"
+                >овде</a
+              >.
+            </p>
+          </div>
+          <div id="TekstDesno">
+            <p style="font-family: optional">
+              <b>Solve</b> ке ја реши задачата доколку има повеке од 16 валидни
+              бројки.
+            </p>
+            <p style="font-family: optional">
+              <b>Test Case</b> ке ви даде задача со само едно решение.
+            </p>
+            <p style="font-family: optional">
+              <b>Empty out grid</b> ке го избрише внесеното.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
